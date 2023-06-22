@@ -22,11 +22,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        
     - name: Set up environment variables
-      run: echo "FIREBASE_CONFIG=${{ secrets.FIREBASE_CONFIG }}" >> $GITHUB_ENV
-    - name: Run firebase
       env:
-          API_KEY: ${{ secrets.FIREBASE_CONFIG }}
+          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
+      run: echo $MY_SECRET_VARIABLE
+    - name: Run the Python script
       run: |
         python random_generator.py
