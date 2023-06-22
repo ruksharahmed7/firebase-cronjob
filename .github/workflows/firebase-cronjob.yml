@@ -26,7 +26,5 @@ jobs:
     - name: Set up environment variables
       env:
           FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
-      run: echo $FIREBASE_CONFIG
-    - name: Run the Python script
       run: |
         python random_generator.py
