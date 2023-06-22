@@ -22,4 +22,4 @@ jobs:
         FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
       run: |
         import os
-        os.getenv('FIREBASE_CONFIG')
+        #os.getenv('FIREBASE_CONFIG')
