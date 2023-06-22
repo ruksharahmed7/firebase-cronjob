@@ -18,7 +18,7 @@ def generate_random_string(length):
 def main():
     # Fetch the service account key JSON file contents
     #json_key = json.loads(os.environ.get('FIREBASE_CONFIG'))
-    json_key = json.loads(os.environ('FIREBASE_CONFIG'))
+    json_key = json.loads(os.environ['FIREBASE_CONFIG'])
     cred = credentials.Certificate(json_key)
     # Initialize the app with a service account, granting admin privileges
     firebase_admin.initialize_app(cred, {
