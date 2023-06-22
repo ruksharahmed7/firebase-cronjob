@@ -6,8 +6,6 @@ name: Python application
 on:
   schedule:
     - cron: '*/5 * * * *'  # Schedule the job to run daily at midnight UTC
-permissions:
-  contents: read
 
 jobs:
   cron:
