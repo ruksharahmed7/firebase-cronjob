@@ -7,4 +7,4 @@ firebase_admin == 6.1.0
 # firebase-cronjob/firebase.ipynb: 5
 # firebase-cronjob/random_generator.py: 5
 python_dotenv == 1.0.0
-json == 2.0.9
+#json == 2.0.9
