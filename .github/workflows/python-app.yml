@@ -21,5 +21,4 @@ jobs:
       env:
         FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
       run: |
-        import os
-        #os.getenv('FIREBASE_CONFIG')
+        python test.py
