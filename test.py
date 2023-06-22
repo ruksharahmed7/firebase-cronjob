@@ -1,3 +1,4 @@
 import os
 
-print('Hello Rukshar Firebase!!: ', + os.environ['FIREBASE_CONFIG'])
+print('Hello Rukshar Firebase!!: ')
+print( os.environ['FIREBASE_CONFIG'])
