@@ -24,6 +24,9 @@ def main():
         'databaseURL': "https://fir-gitaction-cron-default-rtdb.asia-southeast1.firebasedatabase.app"
     })
 
+    # json_data = json.dumps(json_key)
+    # print(json_data)
+
     #generate random data
     random_number = random.randint(1, 100)
     age = random_number
